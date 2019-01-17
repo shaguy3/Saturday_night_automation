@@ -1,11 +1,12 @@
 from selenium import webdriver
 import openpyxl
 import os
+import bs4
 import datetime
 
 # TODO: Open a browser at the speed test url
 speed_test_url = 'https://inteligence.speedtest.net/#login'
-browser = webdriver.Chrome()
+browser = webdriver.Firefox()
 browser.get(speed_test_url)
 
 # TODO: Login to the website and navigate to the mobile compare section
